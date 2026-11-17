@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8f5">
+  <meta name="description" content="Invitation au mariage de Yahia et Meriem, le 23 avril 2027.">
+  <title>Yahia & Meriem — Invitation de mariage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ÉCRAN D'OUVERTURE -->
+  <div id="opening-screen">
+
+    <div class="envelope" id="envelope">
+
+      <div class="envelope-back"></div>
+
+      <div class="envelope-letter">
+        <p>VOUS ÊTES INVITÉS</p>
+        <h2>Yahia <span>&</span> Meriem</h2>
+        <p>23 AVRIL 2027</p>
+      </div>
+
+      <div class="envelope-flap"></div>
+      <div class="envelope-front"></div>
+
+    </div>
+
+    <p class="opening-caption">
+      Une invitation spéciale vous attend
+    </p>
+
+    <button id="openInvitation">
+      OUVRIR L'INVITATION
+    </button>
+
+  </div>
+
+  <!-- MUSIQUE -->
+  <audio id="music" loop>
+    <source src="musique.mp3" type="audio/mpeg">
+  </audio>
+
+  <button
+    class="music-button"
+    id="musicButton"
+    aria-label="Activer la musique"
+    type="button">
+    ♫
+  </button>
+
+  <!-- ACCUEIL -->
+  <header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+
+      <img src="bismillah.png"
+           class="bismillah"
+           alt="Bismillah">
+
+      <p class="small-title">
+        UNE INVITATION À CÉLÉBRER L'AMOUR
+      </p>
+
+      <h1>Yahia <span>&</span> Meriem</h1>
+
+      <p class="invitation-line">
+        Vous invitent à partager leur joie
+      </p>
+
+      <img src="wajaal.png"
+           class="ornament"
+           alt="Ornement">
+
+      <div class="hero-date">
+
+        <span>23</span>
+
+        <div>
+          <strong>AVRIL</strong>
+          <small>2027</small>
+        </div>
+
+      </div>
+
+      <p class="hero-time">
+        À PARTIR DE 15H00
+      </p>
+
+      <a href="#invitation" class="scroll-link">
+        DÉCOUVRIR ↓
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- FAIRE-PART -->
+  <section class="invitation section reveal" id="invitation">
+
+    <img src="calligraphie.png"
+         class="calligraphy"
+         alt="Décoration">
+
+    <p class="eyebrow">AVEC LEURS FAMILLES</p>
+
+    <h2>Faire-part de mariage</h2>
+
+    <div class="gold-line"></div>
+
+    <p class="invitation-text">
+      La famille des mariés a la joie et l'honneur
+      de vous faire part du mariage de leur dernière fille.
+    </p>
+
+    <h3>Meriem</h3>
+
+    <p class="invitation-text">
+      et de Yahia.
+      Ils seront ravis de vous compter parmi eux
+      pour célébrer ce jour unique.
+    </p>
+
+    <div class="gold-line"></div>
+
+    <p class="date-description">
+      23 AVRIL 2027 · 15H00
+    </p>
+
+  </section>
+
+  <!-- GALERIE -->
+  <section class="gallery section">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">QUELQUES INSTANTS</p>
+
+      <h2>Un jour inoubliable</h2>
+
+      <div class="gold-line"></div>
+
+    </div>
+
+    <div class="gallery-grid">
+
+      <img src="photo1.jpg" alt="Photo des mariés" class="reveal">
+      <img src="photo2.jpg" alt="Souvenir" class="reveal">
+      <img src="photo4.jpg" alt="Souvenir" class="reveal">
+      <img src="photo5.jpg" alt="Souvenir" class="reveal">
+      <img src="photo6.jpg" alt="Souvenir" class="reveal">
+      <img src="photo7.jpg" alt="Souvenir" class="reveal">
+
+    </div>
+
+  </section>
+
+  <!-- LIEU -->
+  <section class="venue section reveal">
+
+    <p class="eyebrow">NOUS VOUS ATTENDONS</p>
+
+    <h2>Cérémonie de mariage</h2>
+
+    <div class="gold-line"></div>
+
+    <img src="photo.png"
+         class="venue-photo"
+         alt="Salle de réception">
+
+    <p class="venue-time">15H00</p>
+
+    <h3>Salle des fêtes et conférences TOUARASSE</h3>
+
+    <p class="venue-address">
+      El Achour · Alger · Algérie
+    </p>
+
+    <a
+      class="map-link"
+      href="https://www.google.com/maps?sca_esv=6d215bde5ba85615&amp;biw=1366&amp;bih=607&amp;sxsrf=AKL5yDh55y1XWxAswBiHi9RJiibU62I-9A:1794954007804&amp;uact=5&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiGlNBTExFIERFUyBGw4pURVMgVE9VQVJBU1NFMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSN8DUB9YH3ABeAKQAQCYAQCgAQCqAQCwAQC4AQPIAQD4AQGYAgKgAhLCAgoQABhHGNYEGLADwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQGYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLiAwUSATEgQIgGAZAGCLoGBAgBGBmSBwEyoAcAsgcAuAcAwgcFMi0xLjHIBw2ACAE&amp;um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=dz&amp;sa=X&amp;geocode=Kcdt1rYoro8SMQV7ks6wW0pU&amp;daddr=El+Achour"
+      target="_blank"
+      rel="noopener noreferrer">
+
+      VOIR L'ITINÉRAIRE
+
+    </a>
+
+    <div class="map-container">
+
+      <iframe
+        src="https://maps.google.com/maps?q=El%20Achour%2C%20Alger%2C%20Algeria&amp;z=14&amp;output=embed"
+        loading="lazy"
+        title="Carte de la salle TOUARASSE à El Achour">
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- COMPTE À REBOURS -->
+  <section class="countdown-section section">
+
+    <div class="reveal">
+
+      <p class="eyebrow">LE GRAND JOUR APPROCHE</p>
+
+      <h2>Yahia <span>&</span> Meriem</h2>
+
+      <p class="countdown-intro">
+        Le compte à rebours commence...
+      </p>
+
+      <div class="countdown" id="countdown">
+
+        <div class="count-item">
+          <strong id="days">00</strong>
+          <span>JOURS</span>
+        </div>
+
+        <div class="count-item">
+          <strong id="hours">00</strong>
+          <span>HEURES</span>
+        </div>
+
+        <div class="count-item">
+          <strong id="minutes">00</strong>
+          <span>MINUTES</span>
+        </div>
+
+        <div class="count-item">
+          <strong id="seconds">00</strong>
+          <span>SECONDES</span>
+        </div>
+
+      </div>
+
+      <p id="countdownMessage" class="countdown-message"></p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p class="eyebrow">AVEC TOUT NOTRE AMOUR</p>
+
+    <h2>Yahia <span>&</span> Meriem</h2>
+
+    <p>
+      Nous serons ravis de vous compter parmi nous.
+    </p>
+
+    <div class="footer-social">
+
+      <a href="https://www.instagram.com/digital.invites.dz/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@digitalinvitations.dz"
+         target="_blank"
+         rel="noopener noreferrer">
+        TikTok
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+      Made with love · Digital Invites
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
